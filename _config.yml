@@ -1,3 +1,4 @@
 name: Pengqian's blog
-markdown: kramdown
+markdown: redcarpet
 pygments: true
+paginate: 10
