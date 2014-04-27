@@ -6,8 +6,7 @@ categories: algorithm
 ---
 Given a string and a dictionary, decide whether there exists an valid break of the string based on the dictionary.
 
-For online judge, see [leetcode-word-break].
-
+The following is a non-recursive solution. Worse case running time is `O(|w|*n + |dict|)` where `|w|` is the length of longest of the word, n is string length and `|dict|` is the number of characters in dictionary. For small dictionary and constant size of length of words, the time complexity is `O(n)`.
 {% highlight cpp linenos %}
 class Solution {
 public:
@@ -59,10 +58,9 @@ private:
 					if (nextNode){
 						p = nextNode;
 						if (p->hasVal){
-							if (startIndex == LEN - 1) return true;
-							//has a match before, so skip it
-							if (matches.find(startIndex) != matches.end()) break;
-							else matches.insert(startIndex);
+							if (startIndex == LEN - 1) return true;							
+							if (matches.find(startIndex) == matches.end())
+								matches.insert(startIndex);
 						}
 					}
 					else{
@@ -75,5 +73,7 @@ private:
 	};
 };
 {% endhighlight %}
+
+For online judge, see [leetcode-word-break].
 
 [leetcode-word-break]: http://oj.leetcode.com/problems/word-break/
