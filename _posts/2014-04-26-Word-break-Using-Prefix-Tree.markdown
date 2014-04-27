@@ -6,7 +6,7 @@ categories: algorithm
 ---
 Given a string and a dictionary, decide whether there exists an valid break of the string based on the dictionary.
 
-The following is a non-recursive solution. Worse case running time is `O(|w|*n + |dict|)` where `|w|` is the length of longest of the word, n is string length and `|dict|` is the number of characters in dictionary. For small dictionary and constant size of length of words, the time complexity is `O(n)`.
+The following is a non-recursive solution. Worse case running time is `O(|w|*n + |dict|)` where `|w|` is the length of longest word in the dictionary, `n` is string length and `|dict|` is the number of characters in dictionary. For small dictionary and constant size of length of words, the time complexity is `O(n)`.
 {% highlight cpp linenos %}
 class Solution {
 public:
