@@ -58,7 +58,7 @@ private:
 					if (nextNode){
 						p = nextNode;
 						if (p->hasVal){
-							if (startIndex == LEN - 1) return true;							
+							if (startIndex == LEN - 1) return true;
 							if (matches.find(startIndex) == matches.end())
 								matches.insert(startIndex);
 						}
