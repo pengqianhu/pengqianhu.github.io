@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Word Break using prefix tree"
-date:   2014-04-13 20:33:17
+date:   2014-04-26 20:30:17
 categories: algorithm
 ---
 Given a string and a dictionary, decide whether there exists an valid break of the string based on the dictionary.
